@@ -10,6 +10,7 @@ import {
   toggleIsShown,
 } from '../features/note/noteSlice';
 import { MdSave } from 'react-icons/md';
+import { IoArrowBack } from 'react-icons/io5';
 
 const converter = new Showdown.Converter({
   tables: true,
@@ -44,6 +45,9 @@ export default function CreateNote() {
   };
   return (
     <section>
+      <Link to="/" className="back--icon">
+        <IoArrowBack />
+      </Link>
       <div className="container editor">
         <ReactMde
           value={value}

@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { editNote } from '../features/note/noteSlice';
 import MarkdownPreview from '@uiw/react-markdown-preview';
 import { MdModeEditOutline } from 'react-icons/md';
+import { IoArrowBack } from 'react-icons/io5';
 import { toggleIsShown } from '../features/note/noteSlice';
 
 function NoteDetails() {
@@ -15,6 +16,9 @@ function NoteDetails() {
 
   return (
     <div>
+      <Link to="/" className="back--icon">
+        <IoArrowBack />
+      </Link>
       <MarkdownPreview source={noteBody.body} className="markdown--previewer" />
       <Link to="/createnote">
         <div

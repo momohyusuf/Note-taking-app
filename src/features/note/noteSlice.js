@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { nanoid } from 'nanoid';
 
 const initialState = {
-  note: [],
+  note: JSON.parse(localStorage.getItem('notes')) || [],
   editorText: '',
   isEditingNote: {},
   isShown: false,
@@ -48,6 +48,9 @@ const noteSlice = createSlice({
     toggleIsShown: (state) => {
       state.isShown = !state.isShown;
     },
+    saveNoteToLocalStorage: (state) => {
+      localStorage.setItem('notes', JSON.stringify(state.note));
+    },
   },
 });
 
@@ -57,6 +60,7 @@ export const {
   editNote,
   saveUpadatedNote,
   toggleIsShown,
+  saveNoteToLocalStorage,
 } = noteSlice.actions;
 
 export default noteSlice.reducer;
