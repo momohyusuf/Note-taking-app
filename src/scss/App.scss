@@ -45,8 +45,9 @@
   }
 }
 .back--icon {
-  padding: 0.5em;
+  padding: 1em 0.5em;
   font-size: 1.5em;
+  color: black;
 }
 .note--header {
   text-align: center;
@@ -84,7 +85,7 @@
 .note--date {
   font-weight: $thinFont;
   font-size: $smallFontSize;
-  opacity: 0.6;
+  opacity: 0.7;
   padding: 0.5em 0;
 }
 .markdown--previewer {
