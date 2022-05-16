@@ -1,0 +1,28 @@
+@mixin centeredDisplay {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  text-align: center;
+}
+@mixin defaultBtns {
+  border: 0;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: $primaryIconColor;
+}
+
+@mixin btnsContainer {
+  position: fixed;
+  z-index: 3;
+  bottom: 20px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  font-size: 1.5rem;
+  place-items: center;
+  color: white;
+  background-color: $primaryIconColor;
+  border-radius: 50%;
+}
