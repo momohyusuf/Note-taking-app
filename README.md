@@ -35,6 +35,8 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - React and Redux
+- React Markdown Editor
+- nanoid
 
 
 ### What I learned
