@@ -4,7 +4,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The objective](#the-objective)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -16,7 +16,7 @@
 
 ## Overview
 
-### The challenge
+### The objective
 
 Users should be able to:
 
@@ -24,7 +24,7 @@ Users should be able to:
 - preview their note before saving it.
 
 ### Links
-- Live Site URL: [Add live site URL here](https://note-saver.netlify.app)
+- Live Site URL: [note-saver](https://note-saver.netlify.app)
 
 ## My process
 
